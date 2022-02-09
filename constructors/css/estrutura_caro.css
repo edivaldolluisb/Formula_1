@@ -1,0 +1,48 @@
+
+h1{
+    margin-top: 8rem;
+}
+
+.img_mapeada{
+    max-width: 65%;
+    overflow: auto;
+    max-height: 40rem;
+
+    resize: both;
+}
+
+#imagem_src{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 10rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#imagem_src img{
+    min-width: 1205px;
+}
+
+
+/* width */
+.img_mapeada::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .img_mapeada::-webkit-scrollbar-track {
+    background: #A41F1F; 
+    width: 10px;
+  }
+   
+  /* Handle */
+  .img_mapeada::-webkit-scrollbar-thumb {
+    background: #212529;
+    width: 10px;
+  }
+  
+  /* Handle on hover */
+  .img_mapeada::-webkit-scrollbar-thumb:hover {
+    background: #A41F1F; 
+  }

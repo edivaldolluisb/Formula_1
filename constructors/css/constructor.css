@@ -1,0 +1,51 @@
+
+#table_iframe{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+
+.get_id{
+    border: none;
+    background-color: #fff;
+    padding: 0.3rem 1rem;
+    /*background-color: #212529;*/
+    color: #212529;
+    font-weight: bold;
+}
+table{
+    flex: 50%;
+}
+iframe#ver_dados_constructors{
+    flex: 48%;
+    width: 50%;
+    height: 50rem;
+}
+
+
+.paginacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#link_to_car_structure{
+    background-color: #A41F1F;
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#link_to_car_structure a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #212529;
+    padding: 0.4rem 1.5rem;
+    border-radius: 3px;
+}
+

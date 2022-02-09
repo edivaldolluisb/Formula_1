@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+
+#rankers_3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding-top: 5rem;
+}
+
+/*#rankers_3 > div:nth-child(2){
+    height: 25rem;
+    padding-bottom: 2rem;
+}*/
+
+.driver_rank {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 15rem;
+    height: 24rem;
+    transition: width 2s;
+}
+.driver_rank:hover {
+    width: 17rem;
+}
+.div_imagem{
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+}
+.driver_rank img{
+    width: 50%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.driver_detail{
+    text-align: center;
+    color: #333536;
+}
+.driver_detail p:first-of-type{
+    text-align: center;
+    color: #A41F1F;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.ranked_driver > p:first-of-type{
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #FFA692;
+    color: #A41F1F;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 3rem;
+}
+
+/*sessão dois, tabela dos drivers constructors e races*/
+
+#drivers_constructors_races{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto 5rem;
+}
+#butoes_escolha_dcr{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;    
+    justify-content: center;
+    align-items: center;
+
+    background-color: #A41F1F;
+    padding: 2rem ;
+}
+#butoes_escolha_dcr button{
+    border: none;
+    padding: 0.2rem 1.5rem;
+    font-weight: bold;
+    border-radius: 1px;
+    background-color: #fff;
+    color: #333536;
+
+}
+#butoes_escolha_dcr button:hover{
+    border: none;
+    padding: 0.2rem 1.5rem;
+    font-weight: bold;
+    border-radius: 1px;
+    background-color: #333536;
+    color: #fff;
+
+}
+
+
+/*tabelas*/
+
+.select_item{
+    display: grid;
+    place-items: center;
+
+    padding-bottom: 2rem;
+}
+.select_item select{
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    border-radius: 2px;
+    background-color: #A41F1F;
+    color: #fff;
+    border: none;
+}
+
+#driver_table, #constructor_table, #race_table{
+    width: 100%;
+    color: #fff;
+}
+ #constructor_table, #race_table{
+    display: none;
+}
+
+tr, td{
+    padding: 0.5rem;
+    font-weight: normal;
+    text-align: center;
+}
+th{
+    padding: 1rem;
+}
+tr:nth-child(even) {
+    background-color: #A41F1F;
+}
+
+
+
+/*link de outras pags*/
+
+.link_outras_pags{
+    color: #fff;
+}
+.link_outras_pags p{
+    text-align: center;
+    margin: 1rem auto;
+}
+

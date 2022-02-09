@@ -1,0 +1,271 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITW 2021/22 - Aplicação de testes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> <!-- Font: Roboto Mono -->
+    <link rel="stylesheet" href="./css/myCSS.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico"/>
+    <style>
+        .carousel {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .carousel-item {
+            z-index: -100;
+            height: 480px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .carousel-item:nth-child(1) {
+            background-image: url('https://mb.web.sapo.io/9644ccedd8923e117ecd2d8431295b77d06b4510.jpg');
+        }
+
+        .carousel-item:nth-child(2) {
+            background-image: url('https://staticp.0aos100.pt/posts/1633549094f1hamiltonvetteljpg_1980x600.jpg');
+        }
+
+        .carousel-item:nth-child(3) {
+            background-image: url('https://mb.web.sapo.io/20bec17326e461c884b7ec6ede85727b32cffb1e.jpg');
+        }
+
+        .carousel-item:nth-child(4) {
+            background-image: url('https://static.globalnoticias.pt/tsf/image.jpg?brand=TSF&type=generate&guid=1fb55adf-d0a0-451a-bfa5-a78033ecb357');
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav-beg">
+        <div class="container" id="container_div">
+            <a class="navbar-brand" href="index.html" style="margin-right:2rem">
+                <img src="./images/formula-1-logo-7.png" width="130" height="35" class="d-inline" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="z-index: 2; background-color: #fff;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="itens_menu navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item navitem1" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                            href="news.html">News</a>
+                    </li>
+                    <li class="nav-item navitem1" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                            href="seasons.html">Seasons</a>
+                    </li>
+                    <li class="nav-item navitem2" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                            aria-current="page" href="drivers.html">Drivers</a>
+                    </li>
+                    <li class="nav-item navitem3" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                            href="./constructors.html">Constructors</a>
+                    </li>
+                    <li class="nav-item navitem3" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                            href="./circuits.html">Circuits</a>
+                    </li>
+                    <li class="nav-item navitem3" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                        href="./feedback.html">Feedback</a>
+                </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ml-auto justify-content-end"><a class="nav-link text-light"
+                            href="personal.html"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Working Area -->
+    <div id="carouselExample" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Títulos do Mundial de Fórmula 1 decidem-se na última prova após vitória de Hamilton no
+                        emocionante GP da Arábia Saudita -</h5>
+                    <p> Motores - SAPO Desporto</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fórmula 1 regressa à Sport TV em 2022</h5>
+                    <p>0 aos 100 / Notícias em alta rotação</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Títulos do Mundial de Fórmula 1 decidem-se na última prova após vitória de Hamilton no
+                        emocionante GP da Arábia Saudita - Motores - SAPO Desporto</h5>
+                    <p>SAPO Desporto</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hamilton bate Verstappen e adia título de campeão mundial de Fórmula 1</h5>
+                    <p>TSF</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--breve info-->
+    <section id="breve_info">
+        <div>
+            <h2>
+                Formula 1 ?
+            </h2>
+            <p>
+                Fórmula 1 é a mais popular modalidade de automobilismo do mundo. É a
+                categoria mais avançada do esporte a motor e é regulamentada pela Federação Internacional de
+                Automobilismo. O "Campeonato Mundial de Pilotos", que se tornou o Campeonato Mundial de Fórmula 1 da FIA
+                em 1981, tem sido uma das principais categorias de corrida em todo o mundo desde sua temporada inaugural
+                em 1950. A palavra "fórmula" no nome se refere ao conjunto de regras às quais todos os carros dos
+                participantes devem estar em conformidade. Uma temporada de Fórmula 1 consiste em uma série de
+                corridas, conhecidas como Grandes Prêmios, que acontecem em todo o mundo em circuitos construídos para
+                esse fim e em vias públicas fechadas.
+            </p>
+        </div>
+    </section>
+
+    <!--video 1-->
+    <section id="video_1">
+        <video autoplay muted loop id="myVideo">
+            <source src="./images/formula_video1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <h1>Não perca a corrida!</h1>
+            <p>Entre no mundo da Fórmula 1. Sua fonte de referência para as últimas notícias da F1, destaques em vídeo,
+                resultados de GPs, tempo ao vivo, análises detalhadas e comentários de especialistas.</p>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
+    </section>
+
+    <!--Some info-->
+    <section id="infos_1">
+        <h2>Sabias que :</h2>
+        <div class="info_1">
+            <div>
+                <h3>A primeira mulher</h3>
+                <p>
+                    No ano de 1958, pela primeira vez a Fórmula 1 teve uma mulher piloto alinhando no grid. Foi a
+                    italiana
+                    Maria Teresa de Filippis. Ela tentou se classificar para 5 grandes prêmios, quatro deles pela equipe
+                    Maserati e um pela Porsche. Classificou-se para três deles. Sua melhor atuação foi em sua segunda
+                    corrida, na Bélgica em 1958, quando largou na 15ª colocação e terminou na 10ª colocação.
+                </p>
+            </div>
+            <div>
+                <h3>2007: Um duelo histórico</h3>
+                <p>
+                    A temporada de 2007 foi uma das mais disputadas da história recente da categoria. Lewis Hamilton,
+                    estreante e primeiro piloto negro da história da F1, conseguiu ser o piloto sensação da temporada,
+                    liderando a maior parte do tempo o campeonato de pilotos. Porém, nos GPs da China e do Brasil, os
+                    dois
+                    últimos, o jovem inglês cometeu dois erros que lhe custaram o título. Kimi Räikkönen, de forma
+                    inesperada, conquistou seu primeiro título mundial por uma diferença de apenas um ponto sobre
+                    Hamilton e
+                    Alonso.
+                </p>
+            </div>
+            <div>
+                <h3>2009: A temporada das surpresas</h3>
+                <p>
+                    2009 foi marcado pela redenção do inglês Jenson Button, que havia perdido seu lugar com a saída
+                    repentina da Honda. Entretanto, Ross Brawn, que já havia trabalhado com Button e Barrichello em
+                    2008,
+                    comprou o espólio da equipe japonesa e a rebatizou com seu sobrenome, Brawn GP. Os motores dos
+                    carros
+                    eram da Mercedes-Benz, e na Austrália, Button teve um começo avassalador, quebrado somente no GP da
+                    China, vencido pelo alemão Sebastian Vettel, da RBR. Também para a história dos campeonatos mundiais
+                    ficou o fato de, pela primeira vez, uma equipe ter ganho o campeonato no ano de estreia.
+                </p>
+            </div>
+            <div>
+                <h3>1990-1993: Duelos quentes</h3>
+                <p>
+                    A década de 1990 foi um divisor de águas na F-1.
+
+                    Em 1990, Senna dá o troco em Prost, que estava na Ferrari. Ambos bateram, agora na largada do Grande
+                    Prêmio do Japão, e ficaram fora. Nelson Piquet venceu a prova, com Roberto Pupo Moreno em segundo, e
+                    Aguri Suzuki, da Larrousse, chegou em terceiro lugar, melhor resultado de um piloto japonês na F-1,
+                    que
+                    foi igualado no Grande Prêmio do Japão de 2012 por Kamui Kobayashi chegando também em terceiro.
+                </p>
+            </div>
+        </div>
+
+        
+    </section>
+    <div class="imagem_2">
+
+    </div>
+      <!-- End of Working Area -->
+      <nav class="navbar navbar-expand-sm " id="footer" style="margin-top: 5rem; position: relative;" >
+        <div class="container small">
+            <div class="navbar-text text-light">&copy; Introdução as Tecnologias Web - 2021/22</div>
+            <div class="navbar-text text-light">Made by us with <i class="fa fa-heart-o text-danger"></i> for <a
+                    href="mailto:jsp@ua.pt" class="text-decoration-none text-muted">jsp@ua.pt</a>.</div>
+            <div class="navbar-nav">
+                <div class="nav-item text-end"><a href="https://www.ua.pt" class="nav-link text-light">Universidade de
+                        Aveiro</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="myScript.js"></script>
+
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

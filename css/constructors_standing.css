@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #212529;
+    color: #fff;
+}
+#tres_primeiros{
+    padding-top: 4rem;
+}
+
+h1{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.ranked_constructor{
+    background-color: #A41F1F;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    height: 15rem;
+}
+.ranked_constructor > div:first-of-type{
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #212529;
+}
+.ranked_constructor > div:first-of-type p{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 3rem;
+}
+
+.constructors_image_details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.constructors_image{
+    width: 25rem;
+}
+.constructors_details{
+    position: absolute;
+    right: 1rem;
+    width: 40rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.747);
+    color: #212529;
+}
+.constructors_details p{
+    font-weight: bold;
+}
+.constructors_details p:first-of-type{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.btn_ver_mais{
+    display: flex;
+    justify-content: center;
+}
+.constructors_details a{
+    background-color: #212529;
+    padding: 0.6rem;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+
+    transition: width 2s;
+}
+.constructors_details a:hover{
+    width: 100%;
+}
+@media screen and (max-width: 571px) {
+    .tabela_rank_7{
+        overflow-x: auto;
+    }
+}
+

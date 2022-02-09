@@ -1,0 +1,41 @@
+﻿body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; 
+    margin: 70px 0 70px 0;
+    background-color: #333536;
+}
+
+/* button default
+---------------------------- */
+.btn-default {
+    color: #333;
+    background-color: #f8f9fa;
+    border-color: #ccc;
+}
+
+.btn-default:focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+
+.btn-default:active,
+.btn-default:hover {
+     color: #333;
+     background-color: #e6e6e6;
+     border-color: #adadad;
+}
+
+.navbar.fixed-top {
+    height: 70px;
+    background-color: #A41F1F;
+    font-style: italic;
+    font-size: large;
+}
+
+#footer {
+    height: 40px;
+    background-color: #A41F1F;
+}
+
+

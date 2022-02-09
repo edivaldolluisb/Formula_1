@@ -1,0 +1,148 @@
+main{
+    width: 100%;
+}
+
+/*imagem*/
+.image_1{
+    position: relative;
+    background-image: url('https://www.wallpapertip.com/wmimgs/209-2092500_formula-1-hd-wallpapers.jpg');
+    background-size: auto;
+    background-color: #A41F1F;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 22rem;
+    margin: auto;
+}
+.image_1 span{
+    position: absolute;
+    bottom: 0;
+
+    font-size: 1.3rem;
+    background-color: #fff;
+    color: #212529;
+    font-weight: bold;
+    padding: 0.4rem 1rem;
+    border-top-right-radius: 10px;
+}
+
+/*news e aside*/
+
+#news_and_aside{
+    margin: 4rem auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#listar_news{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    max-height: 70rem;
+    overflow-y: auto;
+    gap: 2rem;
+    flex: 60%;
+}
+.news_item{
+    width: 15rem;
+    max-height: 20rem;
+    background-color: #f1f1f1;
+}
+.news_item img{
+    width: 100%;
+}
+.news_item a:last-of-type{
+    text-decoration: none;
+    color: #fff;
+}
+.news_item a:last-of-type p{
+    margin-top: 1rem;
+    padding: 0.3rem;
+    text-align: justify;
+    color: #212529;
+}
+.news_item > p{
+    padding: 0.3rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0,0,0,.03);
+    color: #212529;
+}
+aside{
+    border-left: 3px solid #A41F1F;
+    padding-left: 2rem;
+    max-height: 70rem;
+    overflow-y: auto;
+
+    flex: 40%;
+}
+aside iframe{
+    width: 80%;
+}
+.bgimg {
+    background-image: url('https://cdn.pixabay.com/photo/2021/01/18/17/32/racing-5928843_960_720.jpg');
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+  
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  .topleft img{
+    max-width: 8rem;
+  }
+  
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+
+
+
+/*barra de rolagem*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #212529; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #212529;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A41F1F; 
+  }

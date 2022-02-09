@@ -1,0 +1,27 @@
+.menu_navegacao{
+    display: flex;
+    flex-direction: row;
+    position: relative; 
+
+}
+
+.barra_de_pesquisa{
+    padding-top: 2rem;
+}
+
+/*
+#detailsButton:active {
+    outline-color: blue;
+}
+
+#favoriteButton:active {
+    outline-color: red;
+}
+
+#favoriteButton:hover {
+    outline-color: blue;
+}
+
+#detailsButton:hover {
+    outline-color: blue;
+}*/

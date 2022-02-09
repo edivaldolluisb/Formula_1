@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITW 2021/22 - News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="./css/myCSS.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./css/circuitos.css" />
+
+    <!-- Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav-beg">
+        <div class="container" id="container_div">
+            <a class="navbar-brand" href="index.html" style="margin-right:2rem">
+                <img src="./images/formula-1-logo-7.png" width="130" height="35" class="d-inline" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="z-index: 2; background-color: #fff;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="itens_menu navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item navitem1" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                            href="news.html">News</a>
+                    </li>
+                    <li class="nav-item navitem1" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                            href="seasons.html">Seasons</a>
+                    </li>
+                    <li class="nav-item navitem2" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                            aria-current="page" href="drivers.html">Drivers</a>
+                    </li>
+                    <li class="nav-item navitem3" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                            href="./constructors.html">Constructors</a>
+                    </li>
+                    <li class="nav-item navitem3" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                            href="./circuits.html">Circuits</a>
+                    </li>
+                    <li class="nav-item navitem3" style="margin:1rem;"><a class="iten_menu nav-link text-light"
+                        href="./feedback.html">Feedback</a>
+                </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ml-auto justify-content-end"><a class="nav-link text-light"
+                            href="personal.html"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Races Map</h1>
+        <section id="geo_section">
+            <div id="regions_div" style="height: 500px;"></div>
+        </section>
+
+        <section id="circuits_card_section">
+            <h1>
+                Circuitos
+            </h1>
+            <div class="container" id="circuits_cards" data-bind="foreach: CircuitsList">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img data-bind="attr:{src: ImageUrl}" alt="Circuito" style="width:100%;height:100%;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 data-bind="text: Name"></h1>
+                            <p data-bind="text: Country"></p>
+                            <p data-bind="text: CircuitId"></p>
+                            <button data-bind="click: $root.ver_detalhes.bind($data, CircuitId)" class="abrirmodal">Mais
+                                detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="modal_session">
+            <i class="fas fa-times" id="fechar_detalhes_circuito"></i>
+            <div class="modal_data">
+                <div>
+                    <h2 data-bind="text:Name()">Circuit de Barcelona-Catalunya</h2>
+                </div>
+                <div class="detalhes_da_circuito">
+                    <p id="country">Country: <span data-bind="text : Country()"></span> </p>
+                    <p id="location">Location: <span data-bind="text : Location()"></span> </p>
+                    <p id="circuitid">Circuit Id: <span data-bind="text : CircuitId()"></span> </p>
+                    <p id="lat">Latitude: <span data-bind="text : Lat()"></span> </p>
+                    <p id="lng">Longitude: <span data-bind="text : Lng()"></span> </p>
+                </div>
+                <div class="google_maps" style="margin-top: 1rem;">
+                    <div id="map" style="width:90%;height:500px;background:#333536; margin: 2rem auto 4rem;"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="exampleModal" role="dialog" tabindex="-1" aria-hidden="true"
+            aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/circuitos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--Google maps-->
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['geochart'],
+        });
+        google.charts.setOnLoadCallback(drawRegionsMap);
+
+        function drawRegionsMap() {
+            var data = google.visualization.arrayToDataTable([
+                ['Country', 'Races', 'Circuits'],
+                ['Brazil', 48, 2],
+                ['Canada', 50, 2],
+                ['France', 61, 2],
+                ['Germany', 67, 2],
+                ['United States', 71, 2],
+                ['RU', 8, 2],
+                ['United Kingdom', 73, 2],
+                ['United Arab Emirates', 13, 2],
+                ['Turkey', 9, 2],
+                ['Switzerland', 6, 2],
+                ['Sweden', 6, 2],
+                ['Spain', 51, 3],
+                ['South Korea', 4, 3],
+                ['South Africa', 23, 3],
+                ['Singapore', 12, 3],
+                ['Saudi Arabia', 1, 3],
+                ['San Marino', 26, 3],
+                ['Qatar', 1, 3],
+                ['Portugal', 18, 3],
+                ['Netherlands', 31, 3],
+                ['Morocco', 1, 3],
+                ['Monaco', 67, 3],
+                ['Mexico', 21, 3],
+                ['Malaysia', 19, 3],
+                ['Japan', 37, 3],
+                ['Italy', 76, 3],
+                ['India', 3, 3],
+                ['Hungary', 36, 3],
+                ['China', 16, 3],
+                ['Belgium', 66, 3],
+                ['Bahrain', 18, 3],
+                ['Azerbaijan', 4, 3],
+                ['Austria', 36, 3],
+                ['Australia', 35, 3],
+                ['Argentina', 20, 3]
+            ]);
+
+            var options = {
+                backgroundColor: {
+                    fill: 'transparent'
+                },
+                colorAxis: {
+                    colors: ['#da2f37']
+                },
+            };
+
+            var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+            chart.draw(data, options);
+        }
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            console.log("ready!");
+            const vm = new Circuit;
+            ko.applyBindings(vm);
+        });
+
+        function getFloatValue(val) {
+            if (val.indexOf('.') > -1) {
+                try {
+                    eval(val);
+                    return parseFloat(val);
+                }
+                catch (error) {
+                    console.log('error');
+                }
+            }
+            return val;
+        }
+    </script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdP7-i-uV9IKPZLwyROZlVgC80EjkL3uA" async defer></script>
+</body>
+
+</html>

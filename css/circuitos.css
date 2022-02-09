@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+}
+
+#nav-beg{
+    background-color: #A41F1F;
+    z-index: 1;
+}
+
+main{
+    padding-top: 3rem;
+}
+#geo_section{
+    margin-top: 2rem;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+#geo_section #regions_div{
+    width: 90%;
+}
+#regions_div{
+    width: 100%;
+}
+
+/*cards*/
+#circuits_card_section{
+    margin-bottom: 5rem;
+}
+h2, h1{
+    color: #333536;
+    text-align: center;
+    margin: 3rem auto;
+}
+h1{
+    color: #fff;
+}
+#circuits_cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 18.75rem;
+    height: 18.5rem;
+    border: 1px solid #A41F1F;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #fff;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #A41F1F;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back h1{
+    margin: auto 0.5rem;
+    margin-top: 1rem;
+}
+  .flip-card-back p{
+    
+    font-weight: normal;
+}
+  .flip-card-back button{
+      border: none;
+      padding: 0.3rem 1rem;
+      border-radius: 3px;
+      font-weight: bold;
+  }
+
+
+
+#modal_session{
+    display: none;
+    position: fixed;
+    background-color: rgb(51, 53, 54, 0.9);
+    color: #fff;
+    top: 0;
+    left: 0;
+    z-index:1;
+    width: 100%;
+    height: 100%;
+}
+.modal_data{
+    width: 70%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 0.5rem;
+}
+#fechar_detalhes_circuito{
+    position: absolute;
+    color: #333536;
+    background-color: #fff;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+#modal_session{
+    overflow-y: auto;
+}
+
+#modal_session h1{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #333536;
+}
+.detalhes_da_circuito{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    color: #333536;
+}
+
+
+#google_maps{
+    padding-top: 1rem;
+}
+
